@@ -10,30 +10,44 @@
     <label>Fill the form </label>
     <br>
     <br>
-
-    <form method="post" ></form>
-    <label for="">Full Name</label>
-    <input type="text" name="Full Name" /> 
-
-    <br>
-    <br>
-    <label for="">Email</label>
-    <input type="email" name="Student email">
-
-    <br>
-    <br>
-    <label for="">Phone Number</label>
-    <input type="Phone Number">
-   
-    <br>
-    <br>
-    <label>Course: </label>
-    <select name="">
-    <option>Web Development</option>
-    <option>Data Science</option>
-    <option>Graphic Design</option>
-    </select>
-
+    <form method="post" >
+        <fieldset>
+            <legend>Personal information</legend>
+            <label for="name">Full Name</label>
+            <input type="text" name="" id="name" required /> 
+            <br>
+            <br>
+            <label for="email">Email</label>
+            <input type="email" name="" id="email" required>
+            <br>
+            <br>
+            <label for="tel">Phone Number</label>
+            <input type="tel" id="tel">
+        </fieldset>
+        <br>
+        <br>
+        <fieldset>
+            <legend>Course Info</legend>
+             <label for="coursename">Course: </label>
+            <select name="" id="coursename">
+                <option>Web Development</option>
+                <option>Data Science</option>
+                <option>Graphic Design</option>
+            </select>
+        <br>
+        <br>
+        <label for="startdate">Desired Start Date</label>
+        <input type="date" name="" id="startdate">
+        <br>
+        <br>
+        <label for="requirements">I require financial aid information</label>
+        <input type="checkbox" name="" id="requirements">
+        <br>
+        <br>
+        </fieldset>
+        <br>
+        <input type="submit">
+    </form>
     
 </body>
 </html>
