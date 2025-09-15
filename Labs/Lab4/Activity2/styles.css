@@ -1,0 +1,18 @@
+p{
+    font-size: 20pt;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.highlight{
+    font-weight: bold;
+}
+
+#special{
+    background-color: rgb(196, 85, 127);
+    border: 1px solid;
+    padding: 20px;
+    margin: 0px;
+}
+a:hover{
+    color: red;
+}
