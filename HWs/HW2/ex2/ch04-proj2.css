@@ -1,0 +1,213 @@
+
+* {
+   box-sizing: border-box;
+}
+body, section, header, div, p, h1, h2, h3, ul, li {
+   margin: 0;
+   padding: 0;
+}
+body {
+   font-family: 'Open Sans', sans-serif;
+   box-sizing: border-box;
+   background-color: #e4e7eb;
+   font-weight: 300;
+}
+header {
+   background-color: #e4e7eb;
+}
+h1 { 
+   text-align: center;
+   font-weight: 600;
+   font-size: 42px;
+   padding: 10px 0;
+}
+
+
+/* Add about 40px padding to the <body> */
+body {
+   padding: 40px;
+}
+
+
+/* Set the width of the <section> to 910px. */
+/* Box shadow */
+/* Distance between blocks */
+section {
+   width: 910px;
+   background-color: #e4e7eb;
+   box-shadow: 0 4px 12px rgba(0,0,0,0.15); 
+   border-radius: 8px;
+   margin-bottom: 2em;
+}
+
+
+/* Column styles */
+.column {
+   display:inline-block;
+   width: 300px;
+   background-color: white;
+   
+}
+
+/* Remove the list bullets */
+.column ul {
+    list-style-type: none;
+}
+
+
+/* Formatting H3 headers */
+h3 {
+   text-align: center;
+   padding: 0.5em;
+}
+.featured h3 {
+   color: white;
+}
+
+
+/* Different colors and text formatting for price table */
+.price.free {
+   background-color: #5bb189;
+   font-weight: 800;
+   text-align: center;
+   padding: 1em;
+   font-size: 24px;
+   
+}
+
+.price.standard {
+   background-color: #4B0082;
+   color: white;
+   font-weight: 800;
+   text-align: center;
+   padding: 1em;
+   font-size: 24px;
+}
+
+.price.professional {
+   background-color: #EC632A;
+   font-weight: 800;
+   text-align: center;
+   padding: 1em;
+   font-size: 24px;
+}
+
+
+/* Formatting to the second part of the text for price table */
+.price.free span {
+   font-weight: 300;
+   font-size: 18px;
+   
+}
+.price.standard span {
+    font-weight: 300;
+    font-size: 18px;
+}
+
+.price.professional span {
+   font-weight: 300;
+   font-size: 18px;
+}
+
+/* Changing color of second table font */
+.featured ul {
+   color: white;
+}
+
+
+
+/* Text formatting for list table */
+.column ul {
+   text-align: center;
+   font-weight: 300;
+   font-size: 18px;
+}
+
+
+
+/* Formatting to the second part of the list table */
+.column ul span {
+   font-weight: bold;
+}
+
+
+/* make every second item a different color using
+the nth-child */
+.column ul li:nth-child(even){
+   background:rgb(47, 59, 64, 0.35);
+}
+
+
+/* Margin inside the list */
+.column ul li {
+   margin-bottom:8px;
+   padding: 12px;
+}
+
+
+/* Formatting buttons in the table */
+.column div {
+   text-align: center;
+}
+
+.column div a {
+   display: inline-block;
+   padding: 10px 100px;
+   margin: 20px 20px;
+   background-color: #3a6ba5;
+   color: white;
+   text-decoration: none;
+   border-radius: 6px;
+   font-weight: 600;
+   box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+}
+
+.column div a:hover {
+   background:#437CBF;
+   box-shadow: 0 6px 10px rgba(0,0,0,0.25);
+}
+
+/* Changing color of second table */
+.column.featured {
+background-color: #2F4F4F;
+}
+
+
+/* Host confidence block */
+#confidence {
+   background-color: #2F4F4F;
+   margin: em;
+   padding: 2em;
+   color: white;
+   width: 910px;
+}
+
+/* Removing markers */
+#confidence ul {
+   list-style: none; 
+   padding-top: 1em;
+}
+
+/* Adding chech marks */
+#confidence ul li {
+   background: url("checkmark.svg") no-repeat left center;
+   background-size: 24px 24px; 
+   padding-left: 32px;
+   margin-bottom: 12px;
+}
+
+
+/* Adding margin for list */
+#confidence ul li {
+   margin-bottom: 10px;
+}
+
+
+/* Specify the link, visited */
+a:link {
+   color:white; 
+}
+
+a:visited {
+   color: #3a6ba5 ;
+}

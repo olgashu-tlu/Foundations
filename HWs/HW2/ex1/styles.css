@@ -1,0 +1,85 @@
+/* Body margins and font*/
+body {
+    margin-top: 0em;
+    margin-left: 4em;
+    margin-right: 4em;
+    margin-bottom: 0em;
+    font-family: Open Sans;
+    font-size: 0.9rem;
+    background-color: white;
+    
+}
+
+/* Font for H1 and blockquote */
+h1 {
+    font-family: Roboto Slab;
+    font-size: 2rem;
+    color: #9f2042;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 0em;
+}
+
+blockquote {
+    font-family: Roboto Slab;
+    font-size: 1.25rem;
+    border: #ececec 1px solid;
+    padding: 1em 2em;
+    background-color: #f9f9f9;
+    margin-left: 4em;
+    margin-right: 4em;
+
+}
+
+/* Hero image */
+.hero {
+width: 100%;
+}
+
+/* Details block */
+#details {
+    text-align: center;
+    color: #a9a9ba;
+}
+
+/* Buttons */
+#buttons a {
+    border: #ececec 1px solid;
+    padding: 1em;
+    display: inline-block;
+    color: #ec8295;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+/* Buttons with hover */
+#buttons a:hover {
+   background-color: #a9a9ba; 
+   color: #9f2042;
+}
+
+/* Footer */
+footer {
+    background-color: #29293a;
+    color: #a9a9ba;
+    padding: 1em 2em;
+    margin-top: 1em;
+}
+
+footer a {
+    color: #ec8295;
+    text-decoration: none;
+  
+}
+
+
+/* Page background color*/
+html {
+    background-color: #f9f9f9;
+}
+
+/* Global padding*/
+p, #buttons {
+    margin-left: 2em;
+    margin-right: 2em;
+}

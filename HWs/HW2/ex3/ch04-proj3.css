@@ -1,0 +1,132 @@
+
+* {
+  box-sizing: border-box;
+}
+body, section, header, div, p, h1, h2, h3, ul, li, figure, figcaption {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: 'Open Sans', sans-serif;
+  box-sizing: border-box;
+  background-color: #F0F4F8;
+  font-weight: 300;
+}
+
+/* Header background-image*/
+header {
+  background-image: url("images/florence.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  min-height: 500px;
+}
+
+
+/* Id logo */
+#topbar {
+  background-image: url("images/logo.png");
+  background-repeat: no-repeat;
+  background-size: 60px;
+  background-position: left top;
+  padding-left: 80px;
+  height: 60px;       
+  line-height: 60px;
+}
+
+
+/* Menu */
+#topbar ul li {
+  display: inline-block;
+  margin-right: 20px;
+  font-weight: 600;
+}
+
+#topbar ul li a:link {
+  color: #51279B;            
+  text-decoration: none;
+}
+
+#topbar ul li a:visited {
+  color: #85828b; 
+}
+
+#topbar ul li a:hover {
+  color: #8662c7; 
+}
+
+
+/* Main information  */
+header div {
+  margin: 5em;
+  color: white;
+}
+
+h2 {
+  font-size: 48px;
+  margin-bottom: 0.5em;
+}
+
+header div p {
+  font-size: 24px;
+  margin-bottom: 0.2em;
+}
+
+header div a {
+  display: inline-block;
+  padding: 12px 14px;
+  background-color: #51279B;
+  text-decoration: none;
+  color: #c0baba;
+}
+
+main {
+  padding: 1em;
+  background-color:#ececec ;
+}
+
+
+/* Cards */
+.card {
+  display: inline-block;
+  vertical-align: top;
+  width: 33%; 
+  background-color: white;
+}
+
+.card img {
+  width: 100%;
+}
+
+.card div {
+  padding: 1em 0.3em;
+}
+
+.card h3 {
+  font-size: 14px;
+}
+
+.description {
+  font-size: 12px;
+}
+
+.social {
+  font-size: 10px;
+  margin-top: 1em;
+}
+
+/* Icons */
+.heart {
+  background: url("images/heart.png") no-repeat left center;
+  background-size: 10px 10px; 
+  padding-left: 15px;
+  margin-bottom: 12px;
+}
+
+.comment {
+  background: url("images/comment.png") no-repeat left center;
+  background-size: 10px 10px; 
+  padding-left: 15px;
+  margin-bottom: 12px;
+  margin-left: 1em;
+}
