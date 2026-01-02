@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <script type="module" src="poster.js"></script>
+</head>
+<body>
+    <!-- ================== Header ================== -->
+    <header>
+        <nav class="container header">
+            <!-- ================== Logo ================== -->
+            <div class="logo">
+                <a href="index.html">The Cult Collection</a>
+            </div>
+            
+            <!-- ================== Navigation ================== -->
+            <div class="nav">
+                <a class="login-btn"></a>
+                <a href="cart.html" id="cart-total">CART 0.00 &euro;</a>
+            </div>
+        </nav>
+    </header>
+    
+    <!-- ================== Poster page ================== -->
+    <section class="container content">
+        <div class="item">
+            <div class="images">
+                <!-- ================== Big main image ================== -->
+                <div class="main-poster">
+                    <img class="main-poster-image">
+                </div>
+                <!-- ================== Other available images ================== -->
+                <div class="mini-posters">
+                    <div class="mini-poster">
+                        <img class="mini-poster-image">
+                    </div>
+                    <div class="mini-poster">
+                        <img class="mini-poster-image">
+                    </div>
+                    <div class="mini-poster">
+                        <img class="mini-poster-image">
+                    </div>
+                    <div class="mini-poster">
+                        <img class="mini-poster-image">
+                    </div>
+                </div>
+            </div>
+
+            <!-- ================== Poster information, right column ================== -->
+            <div class="product">
+                <!-- ================== Block with movie information ================== -->
+                <div id="series-details">
+                    
+                </div>
+                <!-- ================== Form to choose size and quantity of posters ================== -->
+                <form id="order-form">
+                    <!-- ================== Size selector ================== -->
+                    <div class="product-field">
+                        <label for="size_selector">Select size</label>
+                        <select name="size" id="size_selector">
+                            <!-- ================== Size options ================== -->
+                            <option value="s">100x150 cm | EUR 5.00</option>
+                            <option value="m">200x250 cm | EUR 7.00</option>
+                            <option value="l">300x450 cm | EUR 9.00</option>
+                            <option value="xl">350x500 cm | EUR 15.00</option>
+                        </select>
+                    </div>
+                    
+                    <!-- ================== Field for posters quantity ================== -->
+                    <div class="product-field">
+                        <label for="quantity">Quantity</label>
+                        <input type="number" name="qty" id="quantity" value="1" min="1" max="9">
+                    </div>
+
+                    <!-- ================== Show total cost ================== -->
+                    <div class="product-field">
+                        <label for="price">Total price</label>
+                        <p id="price">EUR 5.00</p>
+                    </div>
+
+                    <button class="add-to-cart" type="submit">ADD TO CART</button>
+                    <div class="cart-message hidden">
+                        <p>Poster was added to cart</p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================== Additional posters ================== -->
+    <section class="container featured">
+        <p>You may also like:</p>
+        <!-- ================== List of 4 posters that might be interesting to customer ================== -->
+        <div class="posters"></div>
+    </section>
+
+    <!-- ================== Footer ================== -->
+    <footer>
+        <div class="container footer">
+            <!-- ================== Left column ================== -->
+            <div class="footer-left">
+                <a href="#">SHIPPING</a>
+                <a href="#">PAYMENT AND INVOICES</a>
+                <a href="#">EXCHANGES, RETURNS AND REFUNDS</a>
+            </div>
+            <!-- ================== Middle column ================== -->
+            <p>
+                &copy; 2025 THE CULT COLLECTION. ALL TIGHTS RESERVED.
+            </p>
+            <!-- ================== Right column ================== -->
+            <div class="footer-right">
+                <a href="#">PRIVACY POLICY</a>
+                <a href="#">COOKIES SETTINGS</a>
+                <a href="#">PURCHASE CONDITIONS</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

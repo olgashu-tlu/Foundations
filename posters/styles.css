@@ -1,0 +1,1046 @@
+/* Initial settings for all elements */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  line-height: 100%;
+}
+
+/* Default font and background color */
+body {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  background-color: #f9f9f9;
+  margin: 0 auto;
+}
+
+/* Width and content alignment in container */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hide{
+  display: none !important;
+}
+
+.hidden{
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 2s 0s, opacity 2s linear;
+}
+
+/* Container width for screen sizes < 1250 pixels */
+@media(max-width: 1250px) {
+  .container{
+    max-width: 900px;
+  }
+}
+
+/* Container width for screen sizes < 950 pixels */
+@media(max-width: 950px) {
+  .container{
+    max-width: 720px;
+  }
+}
+
+/* Container width for screen sizes < 750 pixels */
+@media(max-width: 750px) {
+  .container{
+    max-width: 480px;
+  }
+}
+
+/* Container width for screen sizes < 500 pixels */
+@media(max-width: 500px) {
+  .container{
+    max-width: 400px;
+  }
+}
+
+/* ================== Header ================== */
+/* Set header height and background */
+header{
+  background-color: #1A1A1A;
+  height: 80px;
+  display: flex;
+}
+
+/* Set vertical paddings and alignment */
+.header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+
+/* Set logo color and font */
+.logo a{
+  font-family: "Oswald", sans-serif;
+  color: white;
+  font-weight: 700;
+  font-size: 24px;
+  text-decoration: none;
+  line-height: 100%;
+}
+
+/* Set gap between links */
+.nav{
+  display: flex;
+  gap: 100px;
+}
+
+/* Set links color and font */
+.nav a{
+  color: white;
+  font-weight: 700;
+  font-size: 16px;
+  text-decoration: none;
+  line-height: 100%;
+  cursor: pointer;
+}
+
+.login-btn{
+  text-decoration: underline !important;
+}
+
+/* Styles for screen sizes < 750 pixels */
+@media(max-width: 750px){
+  /* Reduce gap between links */
+  .nav{
+    gap: 30px;
+  }
+
+  /* Make logo font smaller */
+  .logo a{
+    font-size: 16px;
+  }
+
+  /* Make links font smaller */
+  .nav a{
+    font-size: 14px;
+  }
+}
+
+/* ================== Banner ================== */
+/* Set image for background */
+.banner{
+  background: url("images/banner.png"); 
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+
+/* Set width and paddings */
+.banner-content{
+  margin-left: 143px;
+  padding-top: 137px;
+  width: 754px;
+  flex-direction: column;
+  text-align: center;
+  color: white;
+  padding: 100px 20px;
+  text-align: left;
+}
+
+/* Set font and size for banner heading */
+.banner-content h1{
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 74px;
+  font-weight: 800;
+  line-height: 65px;
+}
+
+/* Set font and size for banner text */
+.banner-content p{
+  font-size: 20px;
+  margin-top: 20px;
+  font-weight: 400;
+  line-height: 100%;
+  opacity: 0.5;
+}
+
+/* Styles for screen sizes < 950 pixels */
+@media(max-width: 950px){
+  /* Reduce left margin */
+  .banner-content{
+    margin-left: 70px;
+  }
+
+  /* Fit background image into small container */
+  .banner{
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+/* Styles for screen sizes < 750 pixels */
+@media(max-width: 750px){
+  /* Remove left margin */
+  .banner-content{
+    margin-left: unset;
+  }
+
+  /* Make heading font smaller */
+  .banner-content h1{
+    font-size: 36px;
+    line-height: 38px;
+  }
+}
+
+/* ================== Main content ================== */
+/* Set page content vertical paddings and align it to left */
+.content{
+  display: flex;
+  flex-direction: column;
+  padding: 50px 0;
+  align-items: flex-start;
+}
+
+/* Set gap between filter label and dropdown */
+.filter{
+  display: flex;
+  align-items: center;
+}
+
+/* Remove borders and background color from dropdown */
+.filter-select{
+  background-color: unset;
+  border: none;
+  margin-left: 30px;
+  width: 0;
+}
+
+.dropdown{
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+  width: 170px;
+  height: 30px;
+}
+
+.selector{
+  border: black 1px solid;
+  padding: 5px 20px;
+  /* padding-right: 40px; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.arrow {
+  border: solid black;
+  border-width: 0 1px 1px 0;
+  display: inline-block;
+  padding: 4px;
+}
+
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+.options{
+  margin-top: 10px;
+  z-index: 99;
+  background-color: white;
+  border: black 1px solid;
+}
+
+.options p{
+  display: flex;
+  width: 100%;
+  padding: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+.options p:hover{
+  background-color: #EAE9E9;
+  cursor: pointer;
+}
+
+/* Set vertical margins and gaps between columns and rows with posters */
+.posters{
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 46px;
+  row-gap: 100px;
+  margin: 50px 0;
+}
+
+/* Set column width and disable shrinking */
+.poster{
+  flex-basis: 21%;
+  flex-grow: 1;
+  flex-shrink: 0;
+  max-width: 21%;
+}
+
+/* Set cursor on hover */
+.poster:hover{
+  cursor: pointer;
+}
+
+/* Fit image by width */
+.poster img{
+  width: 100%;
+  height: auto;
+}
+
+/* Set font size and vertical margins for movie title */
+.tv-title{
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+/* Set font for poster price */
+.price-range{
+  font-size: 14px;
+  color: #7E7E7E;
+}
+
+/* Styles for screen sizes < 950 pixels */
+@media(max-width: 950px) {
+  /* Set width so that only 2 posters will fit in 1 row */
+  .poster{
+    flex-basis: 46%;
+  }
+}
+
+/* ================== Footer ================== */
+/* Set background and text colors */
+footer{
+  background-color: #1A1A1A;
+  color: white;
+  bottom: 0px;
+}
+
+/* Set vertical paddings and horizontal alignment */
+.footer{
+  display: flex;
+  justify-content: space-between;
+  padding: 44px 0;
+}
+
+/* Set color and text size for links */
+.footer a{
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+/* Set direction and gaps for left column */
+.footer-left{
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+} 
+
+/* Set direction, text alignment and gaps for right column */
+.footer-right{
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  text-align: right;
+}
+
+/* Styles for screen sizes < 950 pixels */
+@media(max-width: 950px) {
+  /* Reduce font size for links */
+  .footer a{
+    font-size: 12px;
+  }
+  
+  /* Reduce font size for text in the middle */
+  .footer p{
+    font-size: 12px;
+  }
+}
+
+/* ================== Item page ================== */
+/* Align columns by sides of the page */
+.item {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Set width and flex direction for block with images */
+.images{
+  display: flex;
+  flex-direction: column;
+  width: 42.5%;
+}
+
+/* Fit main image by width */
+.main-poster-image{
+  width: 100%;
+  height: auto;
+}
+
+/* Set upper margin and gap between other poster variants */
+.mini-posters{
+  display: flex;
+  flex-direction: row;
+  margin-top: 30px;
+  gap: 15px;
+}
+
+/* Set width for div with a poster variant */
+.mini-poster{
+  width: 25%;
+}
+
+/* Fit poster variant image by width */
+.mini-poster-image{
+  width: 100%;
+  height: auto;
+}
+
+/* Set width of column with movie and poster information */
+.product{
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+/* Set font size for movie name */
+.product h1{
+  font-size: 24px;
+  font-weight: 700;
+}
+
+/* Set upper margin and font size for movie description */
+.product-details{
+  margin-top: 15px;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+/* Set vertical margins and font for short description of movie plot */
+.product-overview{
+  margin: 50px 0;
+  font-size: 16px;
+  line-height: 140%;
+}
+
+/* Set flex direction for order form fields */
+.product form{
+  display: flex;
+  flex-direction: column;
+}
+
+/* Set lower margin and alignment for all form fields */
+.product-field{
+  display: flex;
+  margin-bottom: 20px;
+  align-items: center;
+}
+
+/* Set width, right margin and font size for field labels */
+.product label{
+  width: 82px;
+  margin-right: 20px;
+  font-size: 16px;
+}
+
+/* Set paddings, font size, border radius and remove backgroung of input field */
+.product input{
+  background-color: unset;
+  font-size: 16px;
+  line-height: 19px;
+  padding: 20px;
+  border-radius: 5px;
+  border-width: 0;
+}
+
+/* Set paddings, font size, border radius and remove backgroung of dropdown field */
+.product select{
+  background-color: unset;
+  font-size: 16px;
+  line-height: 19px;
+  padding: 20px;
+  border-radius: 5px;
+  border-width: 0;
+}
+
+/* Set font weight and color for poster price */
+/* #price{
+  font-weight: 700;
+  color: #3A5BA0;
+} */
+
+/* Set size, font size, border radius and background color of add to cart button */
+.add-to-cart{
+  display: block;
+  width: 282px;
+  height: 60px;
+  font-weight: 700;
+  font-size: 16px;
+  color: white;
+  background-color: #3A5BA0;
+  border-radius: 5px;
+  border-width: 0;
+  margin-top: 20px;
+}
+
+/* Added to cart message box */
+.cart-message{
+  width: 282px;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+/* Styles for screen sizes < 750 pixels */
+@media(max-width: 750px){
+  /* Switch from 2 columns to 1 */
+  .item{
+    flex-direction: column;
+  }
+
+  /* Set full page width for block with poster images and move poster variants to the right */
+  .images{
+    flex-direction: row;
+    width: 100%;
+  }
+
+  /* Switch margin from top to left, make width of poster variants block 20% and switch variants direction from horizontal to vertical */
+  .mini-posters{
+    flex-direction: column;
+    margin-top: 0;
+    margin-left: 20px;
+    width: 20%
+  }
+
+  /* Fit poster variant image into parent by width */
+  .mini-poster{
+    width: 100%;
+  }
+
+  /* Set column width with movie information to full page */
+  .product{
+    width: 100%;
+    margin-top: 50px;
+  }
+}
+
+/* ================== Featured posters ================== */
+/* Set vertical padding to section with poster suggestions */
+.featured{
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 50px 0;
+}
+
+/* Set font size for poster suggestions */
+.featured > p{
+  font-size: 20px;
+}
+
+/* ================== Cart ================== */
+/* Set page content direction, vertical paddings and align content to left */
+.cart-container{
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 50px 0;
+}
+
+/* Font size for page title */
+.cart-container h1{
+  font-size: 24px;
+}
+
+/* Set full width for table and direction of rows */
+.cart{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+/* Set border, padding and font size for table heading */
+.cart-header{
+  border-bottom: #1A1A1A 1px solid;
+  padding-bottom: 30px;
+  font-size: 20px;
+}
+
+/* Set vertical margin and space between columns */
+.cart-row{
+  margin: 50px 0px;
+  display: flex;
+  gap: 20px
+}
+
+/* Set width for delete button in cart */
+.cart-delete-btn{
+  display: flex;
+  align-items: center;
+  width: 70px;
+}
+
+/* Set font size for delete button link in cart */
+.cart-delete-btn a{
+  font-size: 20px;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+/* Remove violet color from remove button link if it was already clicked */
+.cart-delete-btn:visited{
+  color:unset;
+}
+
+/* Set poster description block width and gap between description columns */
+.cart-product{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+/* Set width for poster image and disable shrinking */
+.cart-product-img{
+  width: 180px;
+  flex-shrink: 0;
+  cursor: pointer;
+}
+
+/* Set bottom border for posters list */
+#cart-items{
+  border-bottom: #1A1A1A 1px solid;
+}
+
+/* Set grid template for poster description columns and alignment */
+.cart-item{
+  width: 100%;
+  display: grid;
+  grid-template-columns: 5fr repeat(3, 2fr);
+  align-items: center;
+}
+
+/* Set flex direction and gap between movie name and poster size */
+.cart-product-description{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Set font size for movie name */
+.cart-product-description h2{
+  font-size: 20px;
+  font-weight: 500;
+}
+
+/* Set font size for poster size */
+.cart-product-description p{
+  font-size: 16px;
+  font-weight: 400;
+}
+
+/* Set font size for poster price */
+.cart-unit-price p{
+  font-size: 18px;
+}
+
+/* Set font size for poster subtotal price */
+.cart-subtotal-price p{
+  font-size: 18px;
+}
+
+/* Set size, border raduis and background color for quantity input field */
+.cart-amount{
+  height: 40px;
+  width: 60px;
+  font-size: 20px;
+  text-align: center;
+  border-radius: 5px;
+  border: none;
+  background-color: #EAE9E9;
+}
+
+/* Set gap and alignment for block with total amount and checkout button */
+.cart-total-row{
+  margin-top: 30px;;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 30px;
+}
+
+/* Set font size for total amount */
+.cart-total-row p{
+  font-size: 18px;
+}
+
+/* Set size, border radius, color and font size for checkout button */
+.cart-total-row button{
+  width: 282px;
+  height: 60px;
+  background-color: #3A5BA0;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+/* Set checkout button color and mouse cursor on mouse over */
+.cart-total-row button:hover{
+  background-color: #4A6BB0;
+  cursor: pointer;
+}
+
+/* Styles for screen sizes < 950 pixels */
+@media(max-width: 950px){
+  /* Align total amount and checkout button to center */
+  .cart-container{
+    align-items: center;
+  }
+
+  /* Unset width to make cart container responsive and change alignment */
+  .cart{
+    width: unset;
+    align-items: center;
+  }
+
+  /* Hide row with table headings */
+  .cart-header{
+    display: none;
+  }
+
+  /* Reduce vertical margin between table rows and align rows vertically */
+  .cart-row{
+    width: 100%;
+    margin: 25px 0;
+  }
+
+  /* Display poster details in column instead of row and align all rows to left */
+  .cart-item{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px
+  }
+
+  /* Set margin between movie name and prices */
+  .cart-product-description{
+    margin-bottom: 30px;
+  }
+
+  /* Set font size, alignment and gap between price label and price amount */
+  .cart-unit-price{
+    font-size: 16px;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+  }
+  
+  /* Set font size, alignment and gap between price label and price subtotal amount */
+  .cart-subtotal-price{
+    font-size: 16px;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+  }
+
+  /* Add label to price */
+  .cart-unit-price:before{
+    content: "Unit price: ";
+  }
+
+  /* Reduce size of quantity input field */
+  .cart-qty input{
+    height: 40px;
+    width: 40px;;
+  }
+
+  /* Add label to quantity */
+  .cart-qty:before{
+    content: "Quantity: ";
+  }
+
+  /* Add label to subtotal price */
+  .cart-subtotal-price:before{
+    content: "Subtotal: ";
+  }
+}
+
+/* Styles for screen sizes < 550 pixels */
+@media(max-width: 550px){
+  /* Reduce size of poster price */
+  .cart-unit-price p{
+    font-size: 16px;
+  }
+  
+  /* Reduce size of poster subtotal price */
+  .cart-subtotal-price p{
+    font-size: 16px;
+  }
+
+  /* Enable row wrap for posters in cart */
+  .cart-row{
+    flex-wrap: wrap;
+  }
+
+  /* Move delete button to next row */
+  .cart-delete-btn{
+    order: 3;
+  }
+
+  /* Reduce size of delete button link */
+  .cart-delete-btn a{
+    font-size: 12px;
+  }
+
+  /* Move checkout button to next row */
+  .cart-total-row{
+    flex-direction: column;
+  }
+}
+
+/* ================== Address page ================== */
+/* Set width for address form container and enable column wrapping */
+.address-form{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+/* Set column size, vertical margins and gaps between fields */
+.address-column{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 75px;
+  width: 50%;
+  margin: 80px 0;
+}
+
+/* Remove input filed borders and background, set field width and lower border */
+.address-column input{
+  border: none;
+  background-color: unset;
+  border-bottom: black 1px solid;
+  width: 384px;
+}
+
+/* Styles for screen sizes < 950 pixels */
+@media(max-width: 950px){
+  /* Set new input field width because the old one doesn't fit */
+  .address-column input{
+    width: 90%;
+  }
+}
+
+/* Styles for screen sizes < 550 pixels */
+@media(max-width: 550px){
+  /* Wrap second column to the next row */
+  .address-column{
+    width: 100%;
+  }
+
+  /* Remove upper margin of second column */
+  .second-column{
+    margin-top: 0;
+  }
+}
+
+/* ================== Delivery ================== */
+/* Set width for delivery form container and gap between columns */
+.delivery-form{
+  display: flex;
+  width: 100%;
+  gap: 200px;
+}
+
+/* Set columns vertical margins and gap between delivery methods */
+.delivery-column{
+  display: flex;
+  flex-direction: column;
+  gap: 75px;
+  margin: 80px 0;
+}
+
+/* Set font size for delivery method name */
+.delivery-column h2{
+  font-size: 24px;
+}
+
+/* Set font size for delivery price */
+.delivery-column p{
+  font-size: 24px;
+}
+
+/* Set font size for delivery date */
+.delivery-column label{
+  font-size: 24px;
+}
+
+/* Set font size for drop point selector */
+.delivery-column select{
+  font-size: 24px;
+}
+
+/* Set border and paddings for delivery method */
+.delivery-method{
+  border: black 1px solid;
+  padding: 32px 75px;
+}
+
+/* Remove border and background, set lower border for drop point selector */
+.delivery-method select{
+  border: none;
+  border-bottom: black 1px solid;
+  background-color: unset;
+}
+
+/* Set vertical margins for delivery method and gaps between available dates */
+.delivery-dates{
+  display: flex;
+  flex-direction: column;  
+  gap: 36px;
+  margin: 75px 0;
+}
+
+/* Set alignment for delivery date radio button */
+.delivery-date-option{
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Set margin between radio button and delivery date */
+.delivery-date-option input{
+  margin-right: 24px;
+}
+
+/* Set gaps between second column rows */
+.delivery-summary{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Set upper margin for posters in cart and gaps between them, allow wrapping posters to the next row */
+.delivery-items{
+  margin-top: 40px;
+  gap: 44px;
+  flex-wrap: wrap;
+}
+
+/* Set width for poster images */
+.delivery-items img{
+  width: 180px;
+}
+
+/* Set color for selected delivery date */
+.delivery-date{
+  color: #7F7C7C;
+}
+
+/* Styles for screen sizes < 1250 pixels */
+@media(max-width: 1250px){
+  /* Reduce gaps between columns */
+  .delivery-form{
+    gap: 50px;
+  }
+
+  /* Reduce size of poster images */
+  .delivery-items img{
+    width: 140px;
+  }
+}
+
+/* Styles for screen sizes < 950 pixels */
+@media(max-width: 950px){
+  /* Remove gap between columns and wrap second column to the next row */
+  .delivery-form{
+    flex-direction: column;
+    gap:0;
+  }
+
+  /* Change alignment of poster images */
+  .delivery-items{
+    justify-content: space-between;
+  }
+}
+
+/* Styles for screen sizes < 750 pixels */
+@media(max-width: 750px){
+  /* Change alignment of poster images when they wrap to the next row */
+  .delivery-items{
+    justify-content: space-around;
+  }
+}
+
+/* Styles for screen sizes < 550 pixels */
+@media(max-width: 550px){
+  /* Reduce paddings inside delivery methods boxes */
+  .delivery-method{
+    padding: 32px 40px;
+  }
+}
+
+/* ================== Confirmation ================== */
+.order-confirmation{
+  align-items: center;
+  min-height: 800px;
+}
+
+.order-confirmation svg{
+  height: 150px;
+  margin: 40px 0;
+}
+
+.order-confirmation h1{
+  margin-bottom: 20px;
+}
+
+/* ================== Login ================== */
+.auth-form{
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  margin: 50px 0px;
+}
+
+.auth-form input{
+  background-color: unset;
+  border: unset;
+  border-bottom: black 1px solid;
+  margin: 20px 0;
+}
+
+.auth-buttons{
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.auth-buttons button{
+  height: 60px;
+  border-radius: 5px;
+  border: black 1px solid;
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 10px 30px;
+  height: 40px;
+  margin: 5px 0px;
+}
+
+#signup{
+  background-color: black;
+}
+
+#login{
+  background-color: unset;
+  color: black;
+}

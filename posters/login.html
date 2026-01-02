@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Authentication</title>
+    <link rel="stylesheet" href="styles.css">
+    <link type="text/css" rel="stylesheet" href="https://www.gstatic.com/firebasejs/ui/6.0.1/firebase-ui-auth.css" />
+    <script type="module" src="login.js" defer></script>
+</head>
+<body>
+    <!-- ================== Header ================== -->
+    <header>
+        <nav class="container header">
+            <!-- ================== Logo ================== -->
+            <div class="logo">
+                <a href="index.html">The Cult Collection</a>
+            </div>
+            
+            <!-- ================== Navigation ================== -->
+            <div class="nav">
+                <a class="login-btn" href="login.html">LOG IN</a>
+                <a href="cart.html" id="cart-total">CART 0.00 &euro;</a>
+            </div>
+        </nav>
+    </header>
+
+    <section class="container content order-confirmation">
+        <h1>Authentication</h1>
+        <div id="auth-container">
+            <form class="auth-form">
+                <input type="email" id="email" placeholder="EMAIL" required>
+                <input type="password" id="password" placeholder="PASSWORD" required>
+
+                <div class="auth-buttons">
+                    <button type="submit" id="login">Log In</button>
+                    <button id="signup">Sign Up</button>
+                </div>
+
+                <section id="message"></section>
+            </form>
+        </div>
+    </section>
+
+    <!-- ================== Footer ================== -->
+    <footer>
+        <div class="container footer">
+            <!-- ================== Left column ================== -->
+            <div class="footer-left">
+                <a href="#">SHIPPING</a>
+                <a href="#">PAYMENT AND INVOICES</a>
+                <a href="#">EXCHANGES, RETURNS AND REFUNDS</a>
+            </div>
+            <!-- ================== Middle column ================== -->
+            <p>
+                &copy; 2025 THE CULT COLLECTION. ALL TIGHTS RESERVED.
+            </p>
+            <!-- ================== Right column ================== -->
+            <div class="footer-right">
+                <a href="#">PRIVACY POLICY</a>
+                <a href="#">COOKIES SETTINGS</a>
+                <a href="#">PURCHASE CONDITIONS</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

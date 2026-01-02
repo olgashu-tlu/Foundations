@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@200..700;1,14..32,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <script type="module" src="index.js"></script>
+</head>
+<body>
+    <!-- ================== Header ================== -->
+    <header>
+        <nav class="container header">
+            <!-- ================== Logo ================== -->
+            <div class="logo">
+                <a href="index.html">The Cult Collection</a>
+            </div>
+            
+            <!-- ================== Navigation ================== -->
+            <div class="nav">
+                <a class="login-btn"></a>
+                <a href="cart.html" id="cart-total">CART 0.00 &euro;</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- ================== Home page banner ================== -->
+    <section class="banner">
+        <div class="banner-content">
+            <h1>Posters<br>inspired by<br>iconic TV series</h1>
+            <p>Discover. Choose. Collect.</p>
+        </div>
+    </section>
+    
+    <!-- ================== List of posters ================== -->
+    <section class="container content">
+        <!-- ================== Filter dropdown ================== -->
+        <div class="filter">
+            <p>FILTER:</p>
+            <!-- <select class="filter-select">
+                
+                <option>All genres</option>
+            </select> -->
+            <!-- ================== Categories list ================== -->
+            <div class="dropdown">
+                <div class="selector">
+                    <div id="genre-name">All genres</div>
+                    <span class="arrow down"></span>
+                </div>
+                <div class="options hide"></div>
+            </div>
+        </div>
+
+        <!-- ================== Posters ================== -->
+        <div class="posters"></div>
+    </section>
+
+    <!-- ================== Footer ================== -->
+    <footer>
+        <div class="container footer">
+            <!-- ================== Left column ================== -->
+            <div class="footer-left">
+                <a href="#">SHIPPING</a>
+                <a href="#">PAYMENT AND INVOICES</a>
+                <a href="#">EXCHANGES, RETURNS AND REFUNDS</a>
+            </div>
+            <!-- ================== Middle column ================== -->
+            <p>
+                &copy; 2025 THE CULT COLLECTION. ALL TIGHTS RESERVED.
+            </p>
+            <!-- ================== Right column ================== -->
+            <div class="footer-right">
+                <a href="#">PRIVACY POLICY</a>
+                <a href="#">COOKIES SETTINGS</a>
+                <a href="#">PURCHASE CONDITIONS</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
